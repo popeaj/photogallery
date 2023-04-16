@@ -88,8 +88,8 @@ nav a:hover {
 }
 .gallery img{
     z-index: 1;
-    width: 100vw;
     max-width: 100%;
+    width: 100%;
 }
 .item{
     text-align: center;
@@ -182,7 +182,7 @@ footer{
 /* media queries */
 
 /* Styles for screens 880px or less */
-@media screen and (max-width: 880px) and (max-device-width:500px){
+@media screen and (max-width: 880px) and (max-device-width:880px){
     nav{
         margin: 0;
         text-align: center;
@@ -191,10 +191,8 @@ footer{
         margin: 0 auto;
         padding: 0;
         display: grid;
-        grid-template-columns: repeat(2, .5fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        width: 99%;
-        height: 100%;
         box-sizing: border-box;
     }
     .caption{
@@ -207,7 +205,7 @@ footer{
 }
 
   
-@media screen and (max-width: 485px) and (max-device-width:500px){
+@media screen and (max-width: 485px) and (max-device-width:485px){
     /* Document outline */
     p{
         font-size: 4em;
@@ -234,7 +232,34 @@ footer{
     /* gallery */
     .gallery{
         display: block;
+        padding: 50px 0;
+        padding-top: 0;
     }
+    .item{
+        margin: 50px;
+    }
+    .caption{
+        text-align: center;
+        z-index: 2;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        font-size: 3em;
+    }
+    .whitebottom{
+        top: 85%;
+        color: white;
+    }
+    .whitetop{
+        color: white;
+    }
+    #italy{
+        top: 93%;
+    }
+
+
     /* form */
     form{
         width: 80%;
