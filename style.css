@@ -182,7 +182,7 @@ footer{
 /* media queries */
 
 /* Styles for screens 880px or less */
-@media screen and (max-width: 880px) and (max-device-width:880px){
+@media screen and (max-width: 880px){
     nav{
         margin: 0;
         text-align: center;
@@ -205,7 +205,7 @@ footer{
 }
 
   
-@media screen and (max-width: 485px) and (max-device-width:485px){
+@media screen and (max-width: 485px){
     /* Document outline */
     p{
         font-size: 4em;
