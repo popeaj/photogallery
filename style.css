@@ -71,8 +71,9 @@ nav ul li a {
     z-index: 100;
 }
 nav a:hover {
-    background-color: #007d7b;
-    color: #fff;
+    color: #007d7b;
+    text-decoration: underline;
+    text-decoration-color: #007d7b;
 }
 
 /* gallery */
@@ -156,8 +157,9 @@ button[type="submit"] {
     font-weight: bold;
 }
   
-button[type="submit"]:hover {
+button:hover {
     background-color: lightblue;
+    color: #007d7b;
 }
 #button{
     text-align: center;
